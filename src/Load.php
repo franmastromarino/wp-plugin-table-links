@@ -1,9 +1,26 @@
 <?php
+/**
+ * QuadLayers WP Plugin Table Links
+ *
+ * @package   quadlayers/wp-plugin-table-links
+ * @author    QuadLayers
+ * @link      https://github.com/quadlayers/wp-plugin-table-links
+ * @copyright Copyright (c) 2023
+ * @license   GPL-3.0
+ */
 
 namespace QuadLayers\WP_Plugin_Table_Links;
 
+/**
+ * Load class
+ */
 class Load {
 
+	/**
+	 * Link defaults
+	 *
+	 * @var string
+	 */
 	protected $link_defaults = array(
 		'place'  => 'action',
 		'text'   => '',
@@ -11,6 +28,12 @@ class Load {
 		'target' => '_blank',
 	);
 
+	/**
+	 * Constructor
+	 *
+	 * @param string $plugin_file Plugin file.
+	 * @param array  $plugin_links Plugin links.
+	 */
 	public function __construct( string $plugin_file, array $plugin_links = array() ) {
 		add_filter(
 			'plugin_row_meta',
