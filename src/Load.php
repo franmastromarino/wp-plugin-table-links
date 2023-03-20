@@ -3,10 +3,7 @@
  * QuadLayers WP Plugin Table Links
  *
  * @package   quadlayers/wp-plugin-table-links
- * @author    QuadLayers
  * @link      https://github.com/quadlayers/wp-plugin-table-links
- * @copyright Copyright (c) 2023
- * @license   GPL-3.0
  */
 
 namespace QuadLayers\WP_Plugin_Table_Links;
