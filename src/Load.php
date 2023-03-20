@@ -36,7 +36,7 @@ class Load {
 			'plugin_row_meta',
 			function( $links, $plugin_file_name, $plugin_data, $status ) use ( $plugin_file, $plugin_links ) {
 
-				if ( $plugin_file_name !== plugin_basename( $plugin_file ) ) {
+				if ( plugin_basename( $plugin_file ) !== $plugin_file_name ) {
 					return $links;
 				}
 
