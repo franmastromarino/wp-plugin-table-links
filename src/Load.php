@@ -31,7 +31,7 @@ class Load {
 	 * @param string $plugin_file Plugin file.
 	 * @param array  $plugin_links Plugin links.
 	 */
-	public function __construct( string $plugin_file, array $plugin_links = array() ) {
+	public function __construct( $plugin_file, array $plugin_links = array() ) {
 		add_filter(
 			'plugin_row_meta',
 			function( $links, $plugin_file_name, $plugin_data, $status ) use ( $plugin_file, $plugin_links ) {
