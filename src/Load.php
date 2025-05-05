@@ -48,7 +48,7 @@ class Load {
 					);
 					if ( isset( $link['url'], $link['text'] ) && 'row_meta' === $link['place'] ) {
 						$style = '';
-						if ( ! empty( $link['color'] ) && in_array( $link['color'], array( 'green', 'red', 'blue' ), true ) ) {
+						if ( ! empty( $link['color'] ) ) {
 							$style = 'style="color:' . $link['color'] . ';font-weight:bold;"';
 						}
 						$links[] = '<a ' . $style . ' target="' . $link['target'] . '" href="' . $link['url'] . '">' . $link['text'] . '</a>';
@@ -69,7 +69,7 @@ class Load {
 					);
 					if ( isset( $link['url'], $link['text'] ) && 'action' === $link['place'] ) {
 						$style = '';
-						if ( ! empty( $link['color'] ) && in_array( $link['color'], array( 'green', 'red', 'blue' ), true ) ) {
+						if ( ! empty( $link['color'] ) ) {
 							$style = 'style="color:' . $link['color'] . ';font-weight:bold;"';
 						}
 						$links[] = '<a ' . $style . ' target="' . $link['target'] . '" href="' . $link['url'] . '">' . $link['text'] . '</a>';
